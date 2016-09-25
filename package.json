@@ -4,6 +4,8 @@
   "description": "simple weather app made with redux and react",
   "main": "index.js",
   "scripts": {
+    "build": "node ./node_modules/webpack/bin/webpack.js",
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test"
   },
   "repository": {
@@ -27,6 +29,7 @@
     "webpack-dev-server": "^1.14.0"
   },
   "dependencies": {
+    "babel-preset-stage-1": "^6.1.18",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-redux": "^4.4.5",
