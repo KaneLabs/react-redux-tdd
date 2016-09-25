@@ -1,0 +1,24 @@
+{
+  "name": "redux_weather_app",
+  "version": "1.0.0",
+  "description": "simple weather app made with redux and react",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/KaneLabs/redux_weather_app.git"
+  },
+  "keywords": [
+    "weather",
+    "redux",
+    "TDD"
+  ],
+  "author": "Kane Labs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KaneLabs/redux_weather_app/issues"
+  },
+  "homepage": "https://github.com/KaneLabs/redux_weather_app#readme"
+}
