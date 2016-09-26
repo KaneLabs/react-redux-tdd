@@ -6,7 +6,8 @@
   "scripts": {
     "build": "node ./node_modules/webpack/bin/webpack.js",
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
-    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test"
+    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
+    "test:enzyme": "mocha --recursive test"
   },
   "repository": {
     "type": "git",
@@ -21,10 +22,12 @@
     "babel-preset-react": "^6.1.18",
     "chai": "^3.5.0",
     "chai-jquery": "^2.0.0",
+    "enzyme": "^2.4.1",
     "jquery": "^2.2.1",
     "jsdom": "^8.1.0",
     "mocha": "^2.4.5",
     "react-addons-test-utils": "^0.14.7",
+    "sinon": "^1.17.6",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.0"
   },
