@@ -5,6 +5,9 @@
 
 /* Styling for <WeatherTable /> Component */
 
-.weather-form{
-  
+.weather-table{
+  position: absolute;
+  top: 120px;
+  width: 80%;
+  left: 10%;
 }
