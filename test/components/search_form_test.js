@@ -46,5 +46,4 @@ describe('SearchForm', () => {
     expect(component.find('button')).to.have.attr('type', 'submit')
   });
 
-
-})
+});
