@@ -16,29 +16,6 @@ describe('WeatherTable', () => {
     expect(component).to.have.class('weather-table');
   });
 
-  it('has a header', () => {
-    expect(component.find('thead')).to.exist;
-  });
-
-  it('has row inside a header', () => {
-    expect(component.find('thead').find('tr')).to.exist;
-  });
-
-  it('has 4 header values', () => {
-    expect(component.find('thead').find('tr').children().length).to.equal(4);
-  });
-
-  it('has the correct header values', () => {
-    expect(component.find('thead').find('tr').children()).to.contain('city');
-    expect(component.find('thead').find('tr').children()).to.contain('temperature');
-    expect(component.find('thead').find('tr').children()).to.contain('pressure');
-    expect(component.find('thead').find('tr').children()).to.contain('humidity');
-  });
-
-  it('has a body', () => {
-    expect(component.find('tbody')).to.exist;
-  });
-
   describe('weather_table displays below search_input', () => {
 
     it('has css position property', () => {
@@ -54,6 +31,48 @@ describe('WeatherTable', () => {
     });
 
   });
+
+  describe('weather-header', () => {
+    it('has a header', () => {
+      expect(component.find('thead')).to.exist;
+    });
+
+    it('has row inside a header', () => {
+      expect(component.find('thead').find('tr')).to.exist;
+    });
+
+    it('has 4 header values', () => {
+      expect(component.find('thead').find('tr').children().length).to.equal(4);
+    });
+
+    describe('weather-header has correct values', () => {
+
+      it('has city header', () => {
+        expect(component.find('thead').find('tr').children()).to.contain('city');
+      });
+
+      it('has temperature header', () => {
+        expect(component.find('thead').find('tr').children()).to.contain('temperature');
+      });
+
+      it('has temperature pressure', () => {
+        expect(component.find('thead').find('tr').children()).to.contain('pressure');
+      });
+
+      it('has temperature humidity', () => {
+        expect(component.find('thead').find('tr').children()).to.contain('humidity');
+      });
+
+    });
+  })
+
+
+
+  it('has a body', () => {
+    expect(component.find('tbody')).to.exist;
+  });
+
+
 
 
 
