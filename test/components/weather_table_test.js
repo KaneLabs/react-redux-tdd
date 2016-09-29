@@ -39,11 +39,22 @@ describe('WeatherTable', () => {
     expect(component.find('tbody')).to.exist;
   });
 
-  it('displays below search-input', () => {
-    expect(component).to.have.css('position');
-    expect(component).to.have.css('top');
-    expect(component).to.have.css('width');
+  describe('weather_table displays below search_input', () => {
+
+    it('has css position property', () => {
+      expect(component).to.have.css('position');
+    });
+
+    it('has css top property', ()  => {
+      expect(component).to.have.css('top');
+    });
+
+    it('has css width property', ()  => {
+      expect(component).to.have.css('width');
+    });
+
   });
+
 
 
 });
