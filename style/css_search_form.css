@@ -3,6 +3,8 @@
   padding: 0;
 }
 
+/* Styling for <SearchForm /> Component */
+
 .search-form{
   position: absolute;
   margin: 0 auto;
