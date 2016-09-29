@@ -22,11 +22,11 @@ describe('App', () => {
     expect(component.find('h1'))
   });
 
-  it('the title is rendering', () => {
+  it('has the correct title', () => {
     expect(component).to.contain('Hello Weather!');
   });
 
-  it('title has the correct class', () => {
+  it('has the correct class', () => {
     expect(component).to.have.class('app-title')
   });
 
