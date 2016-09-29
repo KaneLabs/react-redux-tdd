@@ -13,6 +13,10 @@ describe('SearchForm', () => {
     expect(component).to.exist;
   });
 
+  it('has the right class', () => {
+    expect(component).to.have.class('search-form');
+  });
+
   it('renders an i', () => {
     expect(component.find('i')).to.exist
   });
