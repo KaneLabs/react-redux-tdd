@@ -6,7 +6,7 @@ export default class SearchForm extends Component{
       <form className="search-form">
         <i className="material_icons">search</i>
         <input className="search-input"/>
-        <button className="search-input">Search</button>
+        <button className="search-button" type="submit">Search</button>
       </form>
     );
   }
