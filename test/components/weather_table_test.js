@@ -23,7 +23,7 @@ describe('WeatherTable', () => {
     });
 
     it('has css top property', ()  => {
-      expect(component).to.have.css('top');
+      expect(component).to.have.css('top').exist;
     });
 
     it('has css width property', ()  => {
@@ -43,6 +43,9 @@ describe('WeatherTable', () => {
 
     it('has 4 header values', () => {
       expect(component.find('thead').find('tr').children().length).to.equal(4);
+    });
+    it('has a styled header', () => {
+      expect(component.find('thead')).to.have.css('text-align');
     });
 
     describe('weather-header has correct values', () => {
@@ -64,16 +67,15 @@ describe('WeatherTable', () => {
       });
 
     });
-  })
 
 
-
-  it('has a body', () => {
-    expect(component.find('tbody')).to.exist;
   });
 
 
-
-
+  describe('weather-body', () => {
+    it('renders', () => {
+      expect(component.find('tbody')).to.exist;
+    });
+  });
 
 });

@@ -18,17 +18,24 @@ describe('App', () => {
 
   });
 
-  it('has an h1', () => {
-    expect(component.find('h1'))
+  describe('app-title', () => {
+    it('has an h1', () => {
+      expect(component.find('h1'))
+    });
+
+    it('displays the correct title from reducer', () => {
+      expect(component).to.contain('Pow Report');
+    });
+
+    it('h1 has the correct class', () => {
+      expect(component.find('h1')).to.have.class('app-title');
+    });
+
+    it('is centered', () => {
+      expect(component.find('h1')).to.have.css('text-align')
+    })
   });
 
-  it('displays the correct title from reducer', () => {
-    expect(component).to.contain('Hello Weather!');
-  });
-
-  it('h1 the correct class', () => {
-    expect(component.find('h1')).to.have.class('app-title');
-  });
 
   it('renders the form component', () => {
     expect(component.find('form')).to.have.class('search-form');
