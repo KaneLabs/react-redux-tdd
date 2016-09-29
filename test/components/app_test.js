@@ -32,8 +32,8 @@ describe('App', () => {
     });
 
     it('is centered', () => {
-      expect(component.find('h1')).to.have.css('text-align')
-    })
+      expect(component.find('h1')).to.have.css('text-align');
+    });
   });
 
 
@@ -44,10 +44,5 @@ describe('App', () => {
   it('renders the table component', () => {
     expect(component.find('table')).to.have.class('weather-table');
   });
-
-
-
-
-
 
 });

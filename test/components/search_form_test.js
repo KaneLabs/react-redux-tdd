@@ -6,7 +6,7 @@ describe('SearchForm', () => {
   let component;
 
   beforeEach(() => {
-    component = renderComponent(SearchForm)
+    component = renderComponent(SearchForm);
   });
 
   it('renders to the page', () => {
