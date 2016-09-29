@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling for <SearchForm /> Component */
+
+.search-form{
+  position: absolute;
+  margin: 0 auto;
+  width: 80%;
+  left: 10%;
+  padding: 0;
+}
+
+.search-icon{
+  position: absolute;
+  color: lightgrey;
+  padding-top: 4px;
+  padding-left: 4px;
+}
+
+.search-input{
+  width: calc(90% - 4px);
+  height: 30px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding-left: 28px;
+  font-size: 1em;
+  outline: none;
+}
+
+.search-input:focus{
+  border: 2px solid green;
+}
+
+.search-button{
+  position: absolute;
+  width: calc(10% - 4px);
+  height: 30px;
+  right: 0;
+  box-sizing: border-box;
+  background-color: lightgrey;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  transition: 1s all;
+}
+
+.search-button:hover{
+  background-color: darkgrey;
+  cursor: pointer;
+}
