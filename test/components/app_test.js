@@ -22,13 +22,24 @@ describe('App', () => {
     expect(component.find('h1'))
   });
 
-  it('has the correct title', () => {
+  it('displays the correct title from reducer', () => {
     expect(component).to.contain('Hello Weather!');
   });
 
-  it('has the correct class', () => {
-    expect(component).to.have.class('app-title')
+  it('h1 the correct class', () => {
+    expect(component.find('h1')).to.have.class('app-title')
   });
+
+  it('has a form', () => {
+    expect(component.find('form'))
+  });
+
+  // it('has a table', () => {
+  //   expect(component.find('table'))
+  // });
+
+
+
 
 
 
