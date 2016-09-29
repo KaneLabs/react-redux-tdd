@@ -1,5 +1,5 @@
 import { renderComponent, expect } from '../test_helper';
-import SearchForm from '../../src/components/search_form'
+import SearchForm from '../../src/components/search_form';
 
 describe('SearchForm', () => {
 
@@ -22,7 +22,7 @@ describe('SearchForm', () => {
   });
 
   it('renders a material design search icon', () => {
-    expect(component.find('i')).to.have.class('material_icons');
+    expect(component.find('i')).to.have.class('material-icons');
     expect(component.find('i')).to.contain.text('search');
   });
 
