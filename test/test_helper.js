@@ -1,3 +1,6 @@
+// boilerplate from stephen griders tutorial
+// ¿¿replace mock dom with airbnb's enzyme??
+
 import _$ from 'jquery';
 import React from 'react';
 import ReactDOM from 'react-dom';
