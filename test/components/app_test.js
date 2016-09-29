@@ -27,16 +27,16 @@ describe('App', () => {
   });
 
   it('h1 the correct class', () => {
-    expect(component.find('h1')).to.have.class('app-title')
+    expect(component.find('h1')).to.have.class('app-title');
   });
 
-  it('has a form', () => {
-    expect(component.find('form'))
+  it('renders the form component', () => {
+    expect(component.find('form')).to.have.class('search-form');
   });
 
-  // it('has a table', () => {
-  //   expect(component.find('table'))
-  // });
+  it('renders the table component', () => {
+    expect(component.find('table')).to.have.class('weather-table');
+  });
 
 
 
