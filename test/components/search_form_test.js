@@ -17,6 +17,11 @@ describe('SearchForm', () => {
     expect(component).to.have.class('search-form');
   });
 
+  // TODO: Test for controlled component
+  it('is a controlled component', () => {
+    expect(component).to.have.attr('onSubmit');
+  });
+
   describe('it is centered', () => {
     it('has position', () => {
       expect(component).to.have.css('position');
@@ -73,6 +78,11 @@ describe('SearchForm', () => {
 
     it('is styled', () => {
       expect(component.find('input')).to.have.css('width');
+    });
+
+    // TODO: Test for controlled component
+    it('is a controlled component', () => {
+      expect(component.find('input')).to.have.attr('onChange');
     });
 
   });
