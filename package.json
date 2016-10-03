@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "node ./node_modules/webpack/bin/webpack.js",
+    "start": "node ./server",
     "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test"
   },
@@ -31,6 +32,7 @@
   "dependencies": {
     "axios": "^0.14.0",
     "babel-preset-stage-1": "^6.1.18",
+    "express": "^4.14.0",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-redux": "^4.4.5",
