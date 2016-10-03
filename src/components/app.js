@@ -10,7 +10,7 @@ export default class App extends Component{
         <h1 className="app-title">Weather Report</h1>
         <SearchForm />
         <WeatherTable city={this.props.weather}/>
-        <a href="http://github.com/kanelabs/redux_weather_app"><img src="http://untv.github.io/assets/images/github-icon-black.svg"/><span>View Repo</span></a>
+        <a href="https://github.com/kanelabs/redux_weather_app"><img src="http://untv.github.io/assets/images/github-icon-black.svg"/><span>View Repo</span></a>
       </div>
     )
   }

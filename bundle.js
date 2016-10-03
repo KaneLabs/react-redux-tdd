@@ -23089,7 +23089,7 @@
 	        _react2.default.createElement(_weather_table2.default, { city: this.props.weather }),
 	        _react2.default.createElement(
 	          'a',
-	          { href: 'http://github.com/kanelabs/redux_weather_app' },
+	          { href: 'https://github.com/kanelabs/redux_weather_app' },
 	          _react2.default.createElement('img', { src: 'http://untv.github.io/assets/images/github-icon-black.svg' }),
 	          _react2.default.createElement(
 	            'span',
