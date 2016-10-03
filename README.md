@@ -1,1 +1,1 @@
-weather app to practice TDD with Redux and React
+Simple app demonstrating redux and react with mockups, TDD, and GIT feature branch workflow.
