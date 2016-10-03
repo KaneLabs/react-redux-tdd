@@ -1,5 +1,5 @@
 import { renderComponent, expect } from '../test_helper';
-import SearchForm from '../../src/components/search_form';
+import SearchForm from '../../src/containers/search_form';
 
 describe('SearchForm', () => {
 
@@ -73,6 +73,24 @@ describe('SearchForm', () => {
 
     it('is styled', () => {
       expect(component.find('input')).to.have.css('width');
+    });
+
+
+    describe('input is a controlled component', () => {
+
+      beforeEach(() => {
+        component.find('input').simulate('change', 'chicago');
+      });
+
+      it('shows text in input', () => {
+        expect(component.find('input')).to.have.value('chicago');
+      });
+
+      it('clears when submitted', () => {
+        component.simulate('submit');
+        expect(component.find('input')).to.have.value('');
+      });
+
     });
 
   });

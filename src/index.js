@@ -2,17 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
-import App from './containers/app';
+import App from './components/app';
+import ReduxPromise from 'redux-promise'
 
 import RootReducer from './reducers/root_reducer';
 
-// const createStoreWithMiddleware = applyMiddleware(MiddlewareGoesHere)(createStore);
+const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
 
-// nothing in reducers yet, no need to apply the root reducer
-const store = createStore(RootReducer);
+// const store = createStore(RootReducer);
 
 ReactDOM.render(
-  <Provider store={store}>
+  <Provider store={createStoreWithMiddleware(RootReducer)}>
     <App />
   </Provider>
   , document.querySelector('.container-fluid'));
