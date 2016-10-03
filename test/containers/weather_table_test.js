@@ -1,5 +1,5 @@
 import { renderComponent, expect } from '../test_helper';
-import WeatherTable from '../../src/components/weather_table';
+import WeatherTable from '../../src/containers/weather_table';
 
 describe('WeatherTable', () => {
 
@@ -19,7 +19,7 @@ describe('WeatherTable', () => {
   describe('weather_table displays below search_input', () => {
 
     it('has css position property', () => {
-      expect(component).to.have.css('position');
+      expect(component).to.have.css('position').exist;
     });
 
     it('has css top property', ()  => {
@@ -27,7 +27,7 @@ describe('WeatherTable', () => {
     });
 
     it('has css width property', ()  => {
-      expect(component).to.have.css('width');
+      expect(component).to.have.css('width').exist;
     });
 
   });
@@ -73,9 +73,39 @@ describe('WeatherTable', () => {
 
 
   describe('weather-body', () => {
+
+    beforeEach(() => {
+      const mockWeatherPropsFromAPI = {
+        weather: [
+          {
+            city: {name: 'chicago'},
+            list: [
+              {
+                main: {
+                  humidity:100,
+                  pressure:1009.53,
+                  temp:287.64
+                }
+              }
+            ]
+          }
+        ]
+      };
+      component = renderComponent(WeatherTable, null, mockWeatherPropsFromAPI)
+    });
+
     it('renders', () => {
       expect(component.find('tbody')).to.exist;
     });
+
+    it('displays weather props title in body', () => {
+      expect(component.find('tbody')).to.contain('chicago');
+    });
+
+    it('renders an sparklines graphs', () => {
+      expect(component.find('tbody').find('tr').find('td').find('svg')).to.exist;
+    });
+
   });
 
 });

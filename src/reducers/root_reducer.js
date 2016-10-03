@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux';
-import TitleReducer from './reducer_title'
+import TitleReducer from './reducer_title';
+import WeatherReducer from './reducer_weather';
 
 const rootReducer = combineReducers({
-  title: TitleReducer
+  title: TitleReducer,
+  weather: WeatherReducer
 });
 
 export default rootReducer;

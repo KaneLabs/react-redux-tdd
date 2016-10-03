@@ -29,10 +29,12 @@
     "webpack-dev-server": "^1.14.0"
   },
   "dependencies": {
+    "axios": "^0.14.0",
     "babel-preset-stage-1": "^6.1.18",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-redux": "^4.4.5",
+    "react-sparklines": "^1.6.0",
     "redux": "^3.6.0",
     "redux-promise": "^0.5.3"
   }

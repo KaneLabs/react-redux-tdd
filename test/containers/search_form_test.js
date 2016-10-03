@@ -1,5 +1,5 @@
 import { renderComponent, expect } from '../test_helper';
-import SearchForm from '../../src/components/search_form';
+import SearchForm from '../../src/containers/search_form';
 
 describe('SearchForm', () => {
 
@@ -15,11 +15,6 @@ describe('SearchForm', () => {
 
   it('has the right class', () => {
     expect(component).to.have.class('search-form');
-  });
-
-  // TODO: Test for controlled component
-  it('is a controlled component', () => {
-    expect(component).to.have.attr('onSubmit');
   });
 
   describe('it is centered', () => {
@@ -80,9 +75,22 @@ describe('SearchForm', () => {
       expect(component.find('input')).to.have.css('width');
     });
 
-    // TODO: Test for controlled component
-    it('is a controlled component', () => {
-      expect(component.find('input')).to.have.attr('onChange');
+
+    describe('input is a controlled component', () => {
+
+      beforeEach(() => {
+        component.find('input').simulate('change', 'chicago');
+      });
+
+      it('shows text in input', () => {
+        expect(component.find('input')).to.have.value('chicago');
+      });
+
+      it('clears when submitted', () => {
+        component.simulate('submit');
+        expect(component.find('input')).to.have.value('');
+      });
+
     });
 
   });
