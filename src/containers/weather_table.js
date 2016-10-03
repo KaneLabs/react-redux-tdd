@@ -5,7 +5,6 @@ import { Sparklines, SparklinesLine } from 'react-sparklines';
 class WeatherTable extends Component{
 
   renderWeather(cityData){
-    console.log(cityData);
     const name = cityData.city.name;
     const tempsInF = cityData.list.map( weather => weather.main.temp * (9 / 5) - 459.67 );
     const pressure = cityData.list.map( weather => weather.main.pressure );
