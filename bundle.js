@@ -23090,7 +23090,7 @@
 	        _react2.default.createElement(
 	          'a',
 	          { href: 'https://github.com/kanelabs/redux_weather_app' },
-	          _react2.default.createElement('img', { src: 'http://untv.github.io/assets/images/github-icon-black.svg' }),
+	          _react2.default.createElement('img', { src: 'https://untv.github.io/assets/images/github-icon-black.svg' }),
 	          _react2.default.createElement(
 	            'span',
 	            null,
@@ -23218,7 +23218,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var API_KEY = '60680212f39e06a473f9f1196643ffd3';
-	var ROOT_URL = 'https://api.openweathermap.org/data/2.5/forecast?appid=' + API_KEY;
+	var ROOT_URL = 'http://api.openweathermap.org/data/2.5/forecast?appid=' + API_KEY;
 
 	function fetchWeather(city) {
 	  var url = ROOT_URL + '&q=' + city + ',us';
