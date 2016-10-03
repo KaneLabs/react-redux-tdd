@@ -14,18 +14,18 @@ class WeatherTable extends Component{
       <tr key={name}>
         <td>{name}</td>
         <td>
-          <Sparklines data={tempsInF}>
-            <SparklinesLine />
+          <Sparklines data={tempsInF} height={120}>
+            <SparklinesLine color="red"/>
           </Sparklines>
         </td>
         <td>
-          <Sparklines data={pressure}>
-            <SparklinesLine />
+          <Sparklines data={pressure} height={120}>
+            <SparklinesLine color="orange"/>
           </Sparklines>
         </td>
         <td>
-          <Sparklines data={humidity}>
-            <SparklinesLine />
+          <Sparklines data={humidity} height={120}>
+            <SparklinesLine color="blue"/>
           </Sparklines>
         </td>
       </tr>

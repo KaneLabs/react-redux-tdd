@@ -3,11 +3,24 @@
 .weather-table{
   position: absolute;
   top: 120px;
-  width: 80%;
-  left: 10%;
+  width: 90%;
+  left: 5%;
 }
 
 .weather-table thead {
   text-align: center;
-  background-color: lightgrey;
+  background-color: #607D8B;
+  color: white;
+}
+
+.weather-table thead td{
+  width: 25%;
+  padding: 4px;
+  font-size: 1.2em;
+}
+
+.weather-table tbody td{
+  width: 25%;
+  text-align: center;
+  font-size: 2em;
 }

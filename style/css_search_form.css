@@ -3,8 +3,8 @@
 .search-form{
   position: absolute;
   margin: 0 auto;
-  width: 80%;
-  left: 10%;
+  width: 90%;
+  left: 5%;
   padding: 0;
 }
 
@@ -26,7 +26,7 @@
 }
 
 .search-input:focus{
-  border: 2px solid green;
+  border: 2px solid #4CAF50;
 }
 
 .search-button{
@@ -35,7 +35,7 @@
   height: 30px;
   right: 0;
   box-sizing: border-box;
-  background-color: lightgrey;
+  background-color: #CFD8DC;
   outline: none;
   border: none;
   border-radius: 4px;
@@ -43,6 +43,7 @@
 }
 
 .search-button:hover{
-  background-color: darkgrey;
+  background-color: #607D8B;
   cursor: pointer;
+  color: white;
 }
