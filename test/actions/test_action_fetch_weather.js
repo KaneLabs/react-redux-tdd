@@ -1,6 +1,6 @@
 import { expect } from '../test_helper';
-import { FETCH_WEATHER } from '../../src/actions/types';
-import { fetchWeather } from '../../src/actions/fetch_weather';
+import { FETCH_WEATHER } from '../../src/actions/action_types';
+import { fetchWeather } from '../../src/actions/action_fetch_weather';
 
 
 describe('action_fetch_weather', () => {

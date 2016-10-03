@@ -15,10 +15,18 @@ describe('App', () => {
 
     // 'expect' makes an 'assertion' about a target
     expect(component).to.exist;
+  });
 
+  it('renders the form component', () => {
+    expect(component.find('form')).to.have.class('search-form');
+  });
+
+  it('renders the table component', () => {
+    expect(component.find('table')).to.have.class('weather-table');
   });
 
   describe('app-title', () => {
+
     it('has an h1', () => {
       expect(component.find('h1'))
     });
@@ -34,15 +42,7 @@ describe('App', () => {
     it('is centered', () => {
       expect(component.find('h1')).to.have.css('text-align');
     });
-  });
 
-
-  it('renders the form component', () => {
-    expect(component.find('form')).to.have.class('search-form');
-  });
-
-  it('renders the table component', () => {
-    expect(component.find('table')).to.have.class('weather-table');
   });
 
 });

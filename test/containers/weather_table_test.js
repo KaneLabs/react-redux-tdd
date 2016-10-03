@@ -75,6 +75,7 @@ describe('WeatherTable', () => {
   describe('weather-body', () => {
 
     beforeEach(() => {
+      // give mockAPI call data to test with
       const mockWeatherPropsFromAPI = {
         weather: [
           {

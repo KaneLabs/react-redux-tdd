@@ -1,4 +1,4 @@
-import { FETCH_WEATHER } from '../actions/types';
+import { FETCH_WEATHER } from '../actions/action_types';
 
 export default function(state = [], action ){
 
@@ -8,5 +8,5 @@ export default function(state = [], action ){
     default:
     return state;
   }
-  
+
 }

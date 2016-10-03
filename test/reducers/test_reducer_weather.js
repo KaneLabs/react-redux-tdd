@@ -1,7 +1,7 @@
 import { expect } from '../test_helper';
 import WeatherReducer from '../../src/reducers/reducer_weather';
-import { FETCH_WEATHER } from '../../src/actions/types';
-import { fetchWeather } from '../../src/actions/fetch_weather';
+import { FETCH_WEATHER } from '../../src/actions/action_types';
+import { fetchWeather } from '../../src/actions/action_fetch_weather';
 
 describe('Weather Reducer', () => {
 

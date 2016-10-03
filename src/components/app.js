@@ -7,7 +7,7 @@ export default class App extends Component{
   render(){
     return (
       <div>
-        <h1 className="app-title">Pow Report</h1>
+        <h1 className="app-title">Weather Report</h1>
         <SearchForm />
         <WeatherTable city={this.props.weather}/>
       </div>

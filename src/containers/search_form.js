@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { fetchWeather } from '../actions/fetch_weather';
+import { fetchWeather } from '../actions/action_fetch_weather';
 
 class SearchForm extends Component{
 
