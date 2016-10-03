@@ -6,11 +6,13 @@ import { fetchWeather } from '../../src/actions/fetch_weather';
 describe('Weather Reducer', () => {
 
   it('handles action with unknown type', () => {
+    // if no state or initial state return an array
     expect(WeatherReducer(undefined, {})).to.eql([]);
   });
 
   it('handle action type FETCH_WEATHER', () => {
-    // resolve promise before sending to reducer to test
+
+    // resolve API call before sending to reducer
     fetchWeather('chicago').payload.then(response => {
       const action = { type: FETCH_WEATHER, payload: response}
 
