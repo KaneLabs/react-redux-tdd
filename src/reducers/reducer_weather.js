@@ -1,13 +1,12 @@
-import { FETCH_WEATHER } from '../actions/fetch_weather';
+import { FETCH_WEATHER } from '../actions/types';
 
-export default function weather(state = [], action ){
+export default function(state = [], action ){
 
   switch (action.type) {
     case FETCH_WEATHER:
-      return [ ...state, action.payload.data ]
-      break;
+      return [ ...state, action.payload.data ];
     default:
     return state;
   }
-
+  
 }
